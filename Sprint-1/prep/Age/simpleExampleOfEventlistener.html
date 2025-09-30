@@ -14,13 +14,17 @@
             
         
             margin-top: 45vh;
-            border: 2px red solid;
+            border: 2px rgb(20, 16, 16) solid;
             display: flex ;
             flex-direction:column;
             gap: 20px;
             justify-content: space-around;
             padding: 20px;
             align-items: center;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
 
         }
         .btn_container{
@@ -67,10 +71,14 @@ click the button to see the event listener in action:
 
     // Add an event listener to the button
     buttonRed.addEventListener("click", function() {
+            bg.style.color="black";
+
       bg.style.backgroundColor = "red";
     });
      buttonBlue.addEventListener("click",function(){
     bg.style.backgroundColor="blue"
+    bg.style.color="white"
+    bg.style.border="2px solid white"
      })
 
 
